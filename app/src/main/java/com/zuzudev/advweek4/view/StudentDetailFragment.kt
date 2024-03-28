@@ -28,10 +28,18 @@ class StudentDetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this).get(DetailViewModel::class.java)
-        viewModel.fetch()
+
+        var id = ""
+        if(arguments != null){
+            id = StudentDetailFragmentArgs.fromBundle(requireArguments()).studentId
+        }
+
+        viewModel.fetch(id)
+        binding.txtId.setText(id)
+
 
         viewModel.studentLD.observe(viewLifecycleOwner, Observer {
-            binding.txtId.setText(it.id)
+//            binding.txtId.setText(it.id)
             binding.txtName.setText(it.name)
             binding.txtDob.setText(it.dob)
             binding.txtPhone.setText(it.phone)
