@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "name": "Apple",
+        "color": "Red",
+        "origin": {
+            "country": "United States",
+            "region": "Washington"
+        },
+        "varieties": ["Granny Smith", "Fuji", "Red Delicious"],
+        "images": "https://loremflickr.com/320/240/fruits?lock=1"
+    },
+    {
+        "id": 2,
+        "name": "Banana",
+        "color": "Yellow",
+        "origin": {
+            "country": "Ecuador",
+            "region": "Guayaquil"
+        },
+        "varieties": ["Cavendish", "Lady Finger", "Plantain"],
+        "images": "https://loremflickr.com/320/240/fruits?lock=2"
+    },
+    {
+        "id": 3,
+        "name": "Orange",
+        "color": "Orange",
+        "origin": {
+            "country": "United States",
+            "region": "California"
+        },
+        "varieties": ["Navel", "Valencia", "Blood Orange"],
+        "images": "https://loremflickr.com/320/240/fruits?lock=3"
+    },
+    {
+        "id": 4,
+        "name": "Grape",
+        "color": "Purple",
+        "origin": {
+            "country": "Italy",
+            "region": "Tuscany"
+        },
+        "varieties": ["Cabernet Sauvignon", "Chardonnay", "Merlot"],
+        "images": "https://loremflickr.com/320/240/fruits?lock=4"
+    },
+    {
+        "id": 5,
+        "name": "Pineapple",
+        "color": "Yellow",
+        "origin": {
+            "country": "Costa Rica",
+            "region": "Alajuela"
+        },
+        "varieties": ["Smooth Cayenne", "Queen Victoria", "Red Spanish"],
+        "images": "https://loremflickr.com/320/240/fruits?lock=5"
+    },
+    {
+        "id": 6,
+        "name": "Strawberry",
+        "color": "Red",
+        "origin": {
+            "country": "United States",
+            "region": "California"
+        },
+        "varieties": ["Albion", "Chandler", "Fragaria vesca"],
+        "images": "https://loremflickr.com/320/240/fruits?lock=6"
+    },
+    {
+        "id": 7,
+        "name": "Kiwi",
+        "color": "Brown",
+        "origin": {
+            "country": "New Zealand",
+            "region": "Bay of Plenty"
+        },
+        "varieties": ["Hayward", "Gold", "Green"],
+        "images": "https://loremflickr.com/320/240/fruits?lock=7"
+    },
+    {
+        "id": 8,
+        "name": "Watermelon",
+        "color": "Green",
+        "origin": {
+            "country": "United States",
+            "region": "Georgia"
+        },
+        "varieties": ["Crimson Sweet", "Sugar Baby", "Yellow Doll"],
+        "images": "https://loremflickr.com/320/240/fruits?lock=8"
+    },
+    {
+        "id": 9,
+        "name": "Blueberry",
+        "color": "Blue",
+        "origin": {
+            "country": "United States",
+            "region": "Michigan"
+        },
+        "varieties": ["Bluecrop", "Jersey", "Elliott"],
+        "images": "https://loremflickr.com/320/240/fruits?lock=9"
+    },
+    {
+        "id": 10,
+        "name": "Mango",
+        "color": "Yellow",
+        "origin": {
+            "country": "India",
+            "region": "Maharashtra"
+        },
+        "varieties": ["Alphonso", "Ataulfo", "Keitt"],
+        "images": "https://loremflickr.com/320/240/fruits?lock=10"
+    }
+]
