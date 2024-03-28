@@ -8,14 +8,14 @@ import com.zuzudev.advweek4.databinding.FruitListItemBinding
 import com.zuzudev.advweek4.databinding.StudentListItemBinding
 import com.zuzudev.advweek4.model.Fruit
 import com.zuzudev.advweek4.model.Student
+import com.zuzudev.advweek4.util.loadImage
 
 class FruitListAdapter (val fruitList:ArrayList<Fruit>): RecyclerView.Adapter<FruitListAdapter.FruitViewHolder>()
 {
     class FruitViewHolder(var binding: FruitListItemBinding) :
         RecyclerView.ViewHolder(binding.root)
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType:
-    Int):FruitViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):FruitViewHolder {
         val binding = FruitListItemBinding.inflate(
             LayoutInflater.from(parent.context), parent, false)
         return FruitViewHolder(binding)
@@ -26,10 +26,15 @@ class FruitListAdapter (val fruitList:ArrayList<Fruit>): RecyclerView.Adapter<Fr
         holder.binding.txtCountry.text = "Country: " +fruitList[position].origin.country
         holder.binding.txtRegion.text = "Region: " +fruitList[position].origin.region
         var listVaries = "Varieties: \n"
+
         fruitList[position].varieties?.forEach {
             listVaries += "--. " + it + "\n"
         }
         holder.binding.txtVarieties.text = listVaries
+        var imageView = holder.binding.imgView
+        var progressBar = holder.binding.progressBar2
+        imageView.loadImage(fruitList[position].images, progressBar)
+
 
 
 
