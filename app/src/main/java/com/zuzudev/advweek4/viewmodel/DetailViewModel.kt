@@ -26,28 +26,10 @@ class DetailViewModel(application: Application): AndroidViewModel(application)
         val stringRequest = StringRequest(
             Request.Method.GET, url,
             {
-
                 val sType = object: TypeToken<Student>(){}.type
                 val result = Gson().fromJson<Student>(it, sType)
                 studentLD.value = result as Student
                 Log.d("showvoleyid", studentLD.value.toString())
-
-//                listStudent.value?.forEach{
-//                    if(it.id.equals(idStudent.toString())){
-//                        val student2 = Student(it.id, it.name, it.dob, it.phone, it.photoUrl)
-//                        studentLD.value = student2
-//
-//                        Log.d("showvoley2", studentLD.value.toString())
-//                    }
-////                    else{
-////                        val student3 = Student("a", "a", "a", "a","a")
-////                        studentLD.value = student3
-////                        Log.d("showvoley3", studentLD.value.toString())
-////                    }
-//
-//                }
-////                Log.d("showvoley2", listStudent.value.toString())
-
             },
             {
                 Log.d("showvoley", it.toString())
